@@ -1,0 +1,34 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-testability]]
+== Testability
+Testability is a crucial aspect of software development. It refers to the ease with which a software system can be tested to ensure its correctness and reliability. By writing tests, developers can verify that their code behaves as expected and identify any potential issues or bugs. There are various types of tests that can be performed, such as unit tests, integration tests, and end-to-end tests. Unit tests focus on testing individual components or functions in isolation, while integration tests verify the interaction between different components. End-to-end tests simulate real-world scenarios to ensure the entire system functions correctly.
+
+To achieve good testability, it is important to write code that is modular, decoupled, and follows best practices such as dependency injection. Additionally, using testing frameworks and tools can simplify the process of writing and executing tests.
+
+
+=== Load Testing
+These tests will focus on evaluating the performance of our system under high traffic and heavy usage conditions. This type of testing is crucial to identify bottlenecks and ensure that our application can effectively handle the volume of users and transactions expected in production, without compromising performance and stability. 
+
+
+Initially, a test was carried out with the following procedure:
+1. Create a new user
+2. Log in with this new user
+3. View the main page
+
+image::add1User.png[title="1 User"]
+image::add20Users.png[title="20 User"]
+image::add100Users.png[title="100 User"]
+
+
+Then, a slightly more complex test was then performed, which followed the following procedure:
+1. Log in to the app
+2. View the main page
+3. Play a new game
+4. View the game history
+5. View the previous game specific data
+6. View the history of questions
+
+image::playGame1.png[title="1 User"]
+image::playGame20.png[title="20 User"]
+image::playGame100.png[title="100 User"]

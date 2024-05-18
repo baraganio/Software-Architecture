@@ -1,0 +1,103 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-system-scope-and-context]]
+== System Scope and Context
+
+
+
+=== Business Context
+
+
+image::03-BusinessContextDiagram-Lucidchart.png[title="Business Context Diagram"]
+
+
+.WIQ
+[cols="1,2"]
+|===
+
+|*Comunication Partner*
+|*Description*
+
+| User
+| Registration and participation in the competition and 1uiz results, correct and wrong questions, times and statistics.
+
+| Database
+| Queries and user-related writing and questions and system-related results, questions and users.
+
+| Wikidata
+| Requesting data for question generation from properties and categories and data to generate questions and answers.
+
+| User's API
+| Request user information and user data, history and game statistics.
+
+| Question's API
+| Request generated questions and history of generated questions and answers
+
+| Graphana
+| Visualization and analytics of data integrates with Prometheus to create dashboards and display metrics.
+
+| Prometheus
+| Monitoring time-series data of the application. Used to gather metrics related to the performance and health of the system.
+|===
+
+The agents involved in the WIQ system environment are the following:
+
+* *User*: interacts directly with the WIQ system through its web Frontend being able to register, participate in a game by answering questions and consult its history and statistics.
+
+* *Wikidata*: provides data that will be used in the automatic creation of questions.
+
+* *Database*: stores relevant WIQ data such as user information, game histories and the questions that have been generated. It also communicates directly with the system to manage and retrieve data.
+
+* *User's API*: is given by the system to provide user information such as user histories and statistics.
+
+* *Question's API*: is given by the system to provide information about the questions generated.
+
+* *Grafana and Prometheus*: are used to collect data about the application and display the metrics obtained.
+
+
+=== Technical Context
+
+
+
+image::03-TechnicalContextDiagram-Lucidchart.jpeg[Technical Context Diagram]
+
+.WIQ
+[cols="1,2,3"]
+|===
+
+| Channels
+| Type
+| Input/Output
+
+| SSH
+| Input
+| User -> Frontend Web
+
+| HTTP/REST
+| Output
+| WIQ -> User's API
+
+| HTTP/REST
+| Output
+| WIQ -> Question's API
+
+| HTTP/REST
+| Input
+| WIQ -> Wikidata
+
+| HTTP
+| Input
+| WIQ -> Database communication
+
+| HTTP
+| Output
+| WIQ -> Database communication
+
+| HTTP
+| Output
+| WIQ -> Data monitoring and visualization
+
+|===
+
+
+

@@ -1,0 +1,42 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-solution-strategy]]
+== Solution Strategy
+
+=== Technology decisions
+
+[options="header",cols="1,2"]
+|===
+|Technology|Description
+| _Git_ | _Software version control system_ 
+| _GitHub_ | _Cloud-based service that hosts the aforementioned version control system, Git._ 
+| _React_ | _JavaScript library that allows us to create interactive user interfaces in a simple way. It is based on components._ 
+| _MongoDB_ | _Open source, document-oriented database system_ 
+| _Docker_ | _A tool that makes it easy to create, deploy and run applications using containers. Containers allow you to package an application with all the parts you need, such as libraries and other dependencies, and deploy it as a single package._ 
+| _Wikidata_ | _Website where the information is taken from_ 
+| _Javascript_ | _An interpreted programming language based on prototypes, imperative and dynamic. We will use it on both frontend and backend._
+| _CSS_ | _A graphic programming language oriented to define the repesentation of a document._
+| _Bootstrap_ | _A popular front-end framework for building responsive websites._
+|===
+
+=== Decisions on how to achieve key quality goals
+
+* Usability: The team will take care to design a clear and accessible interface for any user. This will be based on web usability standards.
+
+* Performance: Minimize delays in data processing, communication, or task execution to improve overall system responsiveness. As well, optimize system components, algorithms, and configurations.
+
+* Maintainbility: The architecture of the application must allow new functionalities to be added or existing ones to be modified with as few changes as possible.
+
+* Testability: This is an important quality objective to ensure that the software is reliable, robust and error-free. It is important to implement appropriate software development practices, such as separation of concerns and modular design.
+
+=== Relevant Organizational Decisions
+
+Regarding the organization within the team, we have taken the following decisions:
+
+* Extraordinary meetings, we do them through Discord or Microsoft Teams, because all team members are familiar with that tool.
+
+* Communication between team members occurs mainly through a WhatsApp group, but any problem that arises is also reflected as an issue in Github.
+
+* We use a Kanban board within github to have well organized and in a very clear way the tasks that each team member has to perform/is performing.
+
+

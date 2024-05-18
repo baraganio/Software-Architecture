@@ -1,0 +1,31 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-quality-scenarios]]
+== Quality Requirements
+
+=== Quality Tree
+
+image::10_1_Quality_Tree.png[Business Context Diagram]
+
+=== Quality Scenarios
+
+[options="header",cols="1,3,3"]
+|===
+| Quality Requirements | Scenarios | Priority
+
+| *_Performance_* 
+| We'll run some performance testing and search for a good code optimization performance without taxing the system's resources or memory. Optimize the setups, algorithms, and system parts as well.
+| High
+
+| *_Usability_* 
+| We want to offer the user the possibility to see his personal statistics, as well as a service of access to information and data storage, in an intuitive and efficient system for customers (as fast as possible). 
+| High
+
+| *_Maintainability_* 
+| The design and architecture will allow for flexibility in the face of unexpected events during development, this feature is important because we want to reduce costs in terms of time. 
+| Medium
+
+| *_Testeability_* 
+| The application will be subjected to unit, acceptance and load testing to prove that it works correctly. If new functionality is added to the map, it must be thoroughly tested before deployment.
+| High
+|===

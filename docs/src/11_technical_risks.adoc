@@ -1,0 +1,14 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-technical-risks]]
+== Risks and Technical Debts
+
+=== Technical Risks
+|===
+| Risk | Explanation | Solution
+| No knowladge of React | Non member of the team has worked with React before. | Read React's documentation and search for exercises and tutorials of how to use the technology.
+| Github | Most of us have use it, however, some have not in a project of that magnitude. Also there are some new features for everyone. | Transfer the knowledge of essential operations in Github from those who now them to those who don't, as well as search information about how to use the new features for everyone.
+| Lost of team members | Any member could leave the project due to personal reasons. Risk that gets importance if we take into account we only are four members. | Don't make any member categorically essential, so we can avoid any part of the project from being orphaned.
+| External dependencies | As the app will be deployed on an external server, there could be a situation where we can not deployed it due to an external issue. | Have a second deployment server in order to replace the first if it is not available.
+| Insufficient tests | The lack of tests could trigger the release of some features with a not expected behaviour. | Make exhaustive tests on all the features that will be released  on the app.
+|===

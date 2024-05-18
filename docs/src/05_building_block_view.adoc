@@ -1,0 +1,122 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-building-block-view]]
+
+
+== Building Block View
+
+
+=== Whitebox Overall System
+
+image::DOCsection5_1.png["Level 1"]
+
+.Motivation
+WIQ is the general structure of the system, where the users are going to register in the database, play answering the questions generated with Wikidata or view their previous games among other functionalities. 
+
+.Contained Building Blocks
+
+[options="header",cols="1,3"] 
+|=== 
+| Name | Description
+
+| *_User_*
+| Client/User of the application which will interact with it. 
+
+| *_WIQ application_*  
+| System developed to be used by the users.   
+
+| *_Wikidata_*  
+| Provides data to elaborate all the questions
+|=== 
+
+=== Level 2
+
+image::DOCsection5_2.drawio.png["Level 2"]
+
+.Motivation
+Shows how is the system internally in general terms. 
+
+.Contained Building Blocks
+
+[options="header",cols="1,3"] 
+|=== 
+| Name | Description
+
+| *_User_*
+| Client/User of the application which will interact with it. 
+
+| *_Webapp_*
+| It contains the user interface (frontend) and the development branch (backend).
+
+| *_Microservices_*  
+| Part that takes care of the functionalities.
+
+| *_WIQ_* 
+| Main component that manages all the system.
+
+| *_Wikidata_* 
+| Website where to get information for questions.
+
+| *_Database_* 
+| Component that manages the authentification of users.
+
+|===
+
+=== Level 3
+
+image::DOCsection5_3.drawio.png["Level 3"]
+
+.Motivation
+Detailed structure of the system. Focused on the components of the Webapp, Users API and Questions API.
+
+.Contained Building Blocks
+
+[options="header",cols="1,3"] 
+|=== 
+| Name | Description
+
+| *_User_*
+| Client/User of the application which will interact with it. 
+
+| *_Games History_*  
+| Component to store games played by each user and where user can watch their previous games.
+
+| *_Play New Game_*  
+| Component to create all related to play a new game.
+
+| *_Questions History_* 
+| Component to store previous questions and where user can watch them.
+
+| *_Main Page_* 
+| Component that shows the main functionalities of the system.
+
+| *_Register Users_* 
+| Component to see what users are registered on the system.
+
+| *_Login_* 
+| Component to access the system by the user.
+
+| *_Menu_*  
+| Component to navigate through the system.
+
+| *_Users Service_* 
+| Component that manages the creation of new users.
+
+| *_Questions Service_* 
+| Component that manages the creation of the questions.
+
+| *_Historial Service_* 
+| Component that manages the history of users.
+
+| *_Authentification Service_* 
+| Component that manages the authentification of users.
+
+| *_WIQ_* 
+| Main component that manages all the system.
+
+| *_Wikidata_* 
+| Website where to get information for questions.
+
+| *_Database_* 
+| Component that manages the authentification of users.
+|=== 

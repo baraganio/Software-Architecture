@@ -1,0 +1,55 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-glossary]]
+== Glossary
+
+[cols="e,2e" options="header"]
+|===
+|*Term* | *Definition*
+
+| React
+| JavaScript library that allows us to create interactive user interfaces in a simple way. It is based on components.
+
+| Git
+| Software version control system.
+
+| GitHub
+| Cloud-based service that hosts the aforementioned version control system.
+
+| Wikidata
+| Website where the information is taken from
+
+| Docker 
+| A tool that makes it easy to create, deploy and run applications using containers.
+
+| MongoDB
+| Open source, document-oriented database system.
+
+| JavaScript
+| Interpreted programming language based on prototypes, imperative and dynamic.
+
+| CSS
+| Cascading Style Sheets. Graphic programming language oriented to define the repesentation of a document.
+
+| Draw.io
+| Free application for diagramming.
+
+| Lucidchart
+| Web-based diagramming tool that allows users to collaborate and work together in real time, creating flowcharts, flowcharts, website schematics, UML designs, mind maps, software prototypes and many other types of diagrams.
+
+| Visual Studio Code
+| Independent source code editor.
+
+| Microsoft Azure
+| Cloud computing platform created by Microsoft to build, test, deploy and manage applications and services using its data centers.
+
+| Grafana
+| Grafana is a real-time data analysis and visualisation platform, especially used for monitoring and observability.
+
+| Prometheus
+| Prometheus is an open source monitoring and alarming system designed to collect metrics, store them and enable queries and alerts in modern technology environments.
+
+| API (Application Programming Interface)
+| A set of rules and tools that allow different software to communicate with each other. It facilitates the interaction and exchange of data, functions or services between different applications.
+
+|===

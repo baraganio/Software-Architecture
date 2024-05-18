@@ -1,0 +1,38 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-deployment-view]]
+
+
+== Deployment View
+
+
+=== Infrastructure Level 1
+
+
+image::07-Deployment View.drawio.png[title="Deployment View"]
+
+Motivation::
+
+During the development phase of the application, each team member is using Docker to run all the necessary services on a local server. For the production environment, it is planned to use a Microsoft Azure cloud server for the deployment of the application.
+
+The infrastructure includes user access via a user agent on their computer, which connects to the web interface of the WIQ application. In this configuration, several services will be active, such as the user authentication service, monitoring services and data analysis using Grafana and Prometheus. In addition, two internal APIs dedicated to the generation and retrieval of the history of questions asked and games played by each user are provided.
+
+Quality and/or Performance Features::
+
+The quality and performance of the application have not yet been evaluated, but it is noted that we have high availability, reaching approximately 95%, thanks to the cloud service provided by Microsoft Azure.
+
+Mapping of Building Blocks to Infrastructure::
+For the implementation, it has been decided to implement the following elements in the infrastructure:
+
+- *Quiz Game Application*: The main application is deployed in the development environment inside different Docker containers on each team member's local server, so that a web application made with React is deployed on port `3000`. In the case of the production environment, the application would be deployed in the Microsoft Azure cloud and can be accessed publicly.
+
+- *Questions API*: It is an API in charge of generating questions to the WikiData API dynamically and it also keeps a history of the questions already asked.
+
+- *WikiData API*: The application makes calls to the WikiData API to generate the game questions dynamically and it is accessed both in the development and production environment.
+
+- *MongoDB Database*: The database is executed inside a Docker container in the development environment, so that user data and game information is stored. In the production environment, this database will be managed in a Microsoft Azure service.
+
+- *Authentication Service*: The authentication service allows a user to register and log in to the application so that the data associated with their games are always linked and accessible to their user.
+
+- *Monitoring data*: The application data monitoring and analysis service is made up of two different services, one with Grafana and the other with Prometheus. Both services work together analysing and monitoring application data so that a record can be kept of the information obtained in the form of dashboards.
+

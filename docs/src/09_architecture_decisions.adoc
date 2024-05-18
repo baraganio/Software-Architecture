@@ -1,0 +1,38 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-design-decisions]]
+== Architecture Decisions
+
+
+
+.Contents
+Important, expensive, large scale or risky architecture decisions including rationales.
+With "decisions" we mean selecting one alternative based on given criteria.
+
+|====
+| Decision | Consequences | Risks
+| Use of React.js | - Facilitates the development of user interfaces.
+                  - React.js is a widely popular library in the development community.
+                  - Improves the efficiency of frontend development. | - Limited experience with React.js.
+                                                               - Possible learning curve for the team.
+| Use of JavaScript | - Team's prior knowledge in JavaScript.
+                     - Extensive support and resources available.
+                     - Suitable language for frontend and backend development. | - Limitations in compile-time error detection.
+                                                               - Potential challenges in performance for large projects.
+| Use of MongoDB | - Flexible schema and horizontal scalability.
+                 - Widely used in modern applications.
+                 - Compatibility with unstructured data.
+                 - Already implemented in user registration and login. | - Not familiar with NoSQL databases.
+                                                    - Possible learning curve.
+| Use of Docker | - Containerization that facilitates deployment and scalability.
+                 - Consistent environment in development and production.
+                 - Streamlines dependency management. | - Potential initial complexity in Docker configuration.
+                                                      - Requires additional learning resources.
+| Use of Bootstrap | - Simplifies and accelerates the development of responsive and mobile-first web applications.
+                   - Provides a wide range of pre-designed components and styles.
+                   - Offers extensive documentation and community support. | - Learning curve for team members unfamiliar with Bootstrap.
+                                                                   - Risk of over-reliance on Bootstrap components, leading to less customizability.
+|====
+
+
+

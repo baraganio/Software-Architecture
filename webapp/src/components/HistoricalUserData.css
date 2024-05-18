@@ -1,0 +1,56 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div[title="botones"]{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-gap: 2em;
+}
+
+button{
+  margin: 1em;
+  padding: 0.25em;
+  background-color: #1f3c86c3;
+  color: white;
+  font-size: 0.75em;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  color: black;
+}
+
+th, td {
+  padding: 0.25em;
+  text-align: center;
+}
+
+th[title='pregunta'] {
+  background-color: rgba(41, 120, 152, 0.764);
+}
+
+th[title='correcta'] {
+  background-color: rgba(79, 141, 18, 0.726);
+}
+
+th[title='incorrecta'] {
+  background-color: rgba(230, 72, 72, 0.952);
+}
+
+td{
+  background-color: #3db2e0c3;
+}
+
+
+
+h2{
+  color: #1f3c86c3;
+  padding-bottom: 1rem;
+}

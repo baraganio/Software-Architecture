@@ -1,0 +1,27 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-concepts]]
+== Cross-cutting Concepts
+
+=== Domain model
+
+image::DOCsection8_1.drawio.png["Domain model"]
+
+=== Performance
+A system that performs well provides a positive user experience. Users expect applications and services to respond promptly to their requests. A higher performance leads to increased user satisfaction and engagement. Also, a good performance help to get a better efficiency.
+
+We are going to look for a good performance with the code optimization, without overloading the system and memory and doing some performance test.
+
+=== Usability
+Usability is a fundamental aspect of any application, as it determines the ease and efficiency with which users can interact with it. To ensure the usability of our application, we have followed a series of specific practices and techniques.
+
+We have thoroughly researched user needs and expectations, which has allowed us to design an intuitive and easy-to-use user interface.
+
+=== Maintainability
+The maintainability of the application is an important section since it is necessary that the code is easily modifiable in case in the future we are asked for new features to implement.
+
+We are going to use React, which is a framework that facilitates interactivity with the user interface, so it is important to reach users.
+
+
+=== Testeability
+As a best practice, throughout development, we will subject our code to multiple unit tests, in order to ensure the robustness and effectiveness of our product before it is deployed on the web. As well, we will  test the functionality of the whole app itself, so that the user experience is the best possible.

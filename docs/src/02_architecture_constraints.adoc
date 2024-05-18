@@ -1,0 +1,65 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-architecture-constraints]]
+== Architecture Constraints
+
+.Introduction
+In the development of the WIQ  Application, various constraints have been identified to guide the project towards success. These constraints are crucial in aligning with user expectations and meeting the diverse needs of stakeholders.
+
+=== Functionality-related Constraints
+These constraints pertain to the core functionality of the application.
+
+[options="header", cols="1,1"]
+|===
+| Constraint | Explanation
+| Integration with Wikidata API | Enabling seamless integration with the Wikidata API is imperative. This integration allows automatic generation of questions and responses, enhancing the application's functionality.
+
+| User Authentication | Implementation of a robust login system is mandated to safeguard user privacy and control access to sensitive information within the application.
+
+| Web Deployment | The application must be easily deployable, ensuring convenient access for users through the web.
+
+|===
+
+=== Process-related Constraints
+These constraints focus on the development process itself.
+
+[options="header", cols="1,1"]
+|===
+| Constraint | Explanation
+| Version Control (GitHub) | Utilization of GitHub and Git for version control is essential. This facilitates collaboration and maintains a structured workflow with effective monitoring of team contributions.
+
+|===
+
+=== Data Management Constraints
+These constraints are associated with the management of application data.
+
+[options="header", cols="1,1"]
+|===
+| Constraint | Explanation
+| MongoDB Database | The application will leverage MongoDB, a NoSQL document database known for its flexibility in handling dynamic data structures, scalability, and high performance.
+
+|===
+
+=== User Interface Constraints
+These constraints focus on the user interface design.
+
+[options="header", cols="1,1"]
+|===
+| Constraint | Explanation
+| React for User Interface | The application's user interface will be built using React, a JavaScript library with a component-based architecture. This choice aims to provide a user-friendly and modular interface with efficient UI updates.
+
+|===
+
+.Recommended Technologies
+While not constraints, the following technologies are recommended for optimal performance and functionality of the WIQ Application.
+
+[options="header", cols="1,1"]
+|===
+| Technology | Explanation
+| React | A JavaScript library for building user interfaces, known for its component-based architecture and efficient UI updates.
+| ExpressJS | A fast and minimalist web framework for Node.js, suitable for server-side tasks and supporting various web applications.
+| MongoDB | A NoSQL document database, offering schema flexibility, scalability, and high performance for storing application data.
+
+|===
+
+These constraints and recommended technologies collectively shape the architectural decisions, ensuring a robust and effective development process for the WIQ  Application.

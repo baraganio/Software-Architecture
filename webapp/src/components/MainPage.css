@@ -1,0 +1,95 @@
+div[title="main"] {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div[title="main-title"]>h1 {
+    margin-top: 1.5rem;
+    margin-bottom: -1rem;
+    color: #182e3f;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+div[title="main-title"]>h2 {
+    color: #0155B7;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(20px);
+    }
+}
+
+
+div[title="main"]>button:hover {
+    background-color: #bdd8ff;
+    color: #007dfe;
+    font-weight: 600;
+    width: auto;
+    font-size: 1em;
+    height: 3rem;
+}
+
+div[title="main"]>button {
+    background-color: #0155B7;
+    color: white;
+    font-weight: 600;
+    width: auto;
+    font-size: 1em;
+    height: 3rem;
+    margin: 1rem;
+}
+
+
+
+.img-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.img-container img {
+    width: 70%;
+    height: auto;
+    animation: slide 3s ease infinite alternate;
+}
+
+@media (min-width: 768px) {
+    .img-container {
+        text-align: left;
+    }
+}
+
+
+
+.dialogContainer {
+    color: #4c8dbf;
+}
+
+.dialogTitle h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #0155B7;
+}
+
+
+.dialogImage {
+    text-align: center;
+}
+
+.dialogImage img {
+    width: 18rem;
+}
+
+
+.dialogContainer {
+    margin-bottom: 40%;
+}

@@ -1,0 +1,29 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+[[section-runtime-view]]
+== Runtime View
+
+=== User plays a game
+When the game is started, the app will call the createquestion service that is in charge of provide generated questions from wikidata information.
+[plantuml,"Start a game",png]
+----
+actor a as "User"
+participant q as "Game GUI"
+participant w as "CreateQuestions service"
+database d as "Database"
+
+
+a -> q: Start the game
+loop number of questions
+q -> w: Ask for a question
+w -->q: Returns the question
+q -> d: Store the question
+q -> a: Returns the question
+
+a -> q: Pick an answer
+q -> a: Shows if the answer was valid or not
+a -> q: Asks for next question
+end
+q -> a: Show the game stats
+q -> d: Store the game with questions, answers and stats
+----
